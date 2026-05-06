@@ -1,0 +1,42 @@
+# ── Go ────────────────────────────────────────────────────────
+# Compiled binaries
+synapsys-agent
+synapsys-agent-linux-amd64
+synapsys-agent-linux-arm64
+synapsys-agent-darwin-amd64
+synapsys-agent-darwin-arm64
+synapsys-agent-windows-amd64.exe
+
+# Test artifacts
+*.test
+*.out
+coverage.html
+coverage.txt
+
+# ── Environment / Secrets ─────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+
+# Cert directory (local dev)
+certs/
+
+# ── IDE ───────────────────────────────────────────────────────
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+
+# ── OS ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Build artifacts ───────────────────────────────────────────
+dist/
+release/
