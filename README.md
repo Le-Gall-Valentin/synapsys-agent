@@ -2,7 +2,7 @@
 
 > Lightweight Go agent for executing routines on behalf of the SynapSys API.
 
-The SynapSys agent is a single static binary deployed on each target Linux server. It connects to the [SynapSys API](https://github.com/YOUR_USERNAME/synapsys-api) via a mutually authenticated WebSocket (mTLS), receives execution orders, runs shell scripts or Makefile targets, and streams back logs in real time.
+The SynapSys agent is a single static binary deployed on each target Linux server. It connects to the [SynapSys API](https://github.com/Le-Gall-Valentin/synapsys-api) via a mutually authenticated WebSocket (mTLS), receives execution orders, runs shell scripts or Makefile targets, and streams back logs in real time.
 
 ---
 
@@ -19,7 +19,7 @@ The SynapSys agent is a single static binary deployed on each target Linux serve
 ## Prerequisites
 
 - Linux (amd64 or arm64)
-- A running [SynapSys API](https://github.com/YOUR_USERNAME/synapsys-api) instance
+- A running [SynapSys API](https://github.com/Le-Gall-Valentin/synapsys-api) instance
 - A dedicated Linux user with only the permissions needed to run your scripts
 
 ---
@@ -29,7 +29,7 @@ The SynapSys agent is a single static binary deployed on each target Linux serve
 ### Download the binary
 
 ```bash
-curl -LO https://github.com/YOUR_USERNAME/synapsys-agent/releases/latest/download/synapsys-agent-linux-amd64
+curl -LO https://github.com/Le-Gall-Valentin/synapsys-agent/releases/latest/download/synapsys-agent-linux-amd64
 chmod +x synapsys-agent-linux-amd64
 sudo mv synapsys-agent-linux-amd64 /usr/local/bin/synapsys-agent
 ```
@@ -37,7 +37,7 @@ sudo mv synapsys-agent-linux-amd64 /usr/local/bin/synapsys-agent
 Verify the checksum:
 
 ```bash
-curl -LO https://github.com/YOUR_USERNAME/synapsys-agent/releases/latest/download/checksums.txt
+curl -LO https://github.com/Le-Gall-Valentin/synapsys-agent/releases/latest/download/checksums.txt
 sha256sum --check checksums.txt
 ```
 
@@ -97,7 +97,7 @@ This behavior can be disabled with `--auto-update=false`.
 ## Building from source
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/synapsys-agent.git
+git clone https://github.com/Le-Gall-Valentin/synapsys-agent.git
 cd synapsys-agent
 go build -o synapsys-agent ./cmd/agent
 ```
